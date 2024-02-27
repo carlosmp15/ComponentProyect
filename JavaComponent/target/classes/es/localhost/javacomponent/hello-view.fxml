@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="430.0" prefWidth="330.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="es.localhost.javacomponent.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Pane prefHeight="494.0" prefWidth="290.0">
+      <VBox.margin>
+         <Insets bottom="-10.0" left="-10.0" right="-10.0" top="-10.0" />
+      </VBox.margin>
+      <children>
+         <Label fx:id="lTitulo" layoutX="34.0" layoutY="8.0" text="Bienvenido de nuevo">
+            <font>
+               <Font name="Arial Bold" size="24.0" />
+            </font>
+         </Label>
+         <Label layoutX="44.0" layoutY="59.0" text="¿Qué operación deseas realizar?">
+            <font>
+               <Font name="Arial" size="15.0" />
+            </font>
+         </Label>
+         <ComboBox fx:id="cbOperacion" layoutX="80.0" layoutY="95.0" onAction="#onComboClick" prefWidth="150.0" promptText="Elige una opción" />
+      </children>
+   </Pane>
+</VBox>
