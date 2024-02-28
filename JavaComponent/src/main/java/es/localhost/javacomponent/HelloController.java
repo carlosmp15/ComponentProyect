@@ -36,9 +36,9 @@ public class HelloController implements Initializable {
     public void EjecutarConsulta(){
         switch (listaOpciones.getValue().toString()){
             case "POST":txtRespuesta.setText(op.post(Ruta.getText(),txtParametros.getText()));break;
-            case "PUT":
-            case "GET":
-            case "DELETE":
+            case "PUT":txtRespuesta.setText(op.put(Ruta.getText(),txtParametros.getText()));break;
+            case "GET":txtRespuesta.setText(op.get(Ruta.getText()));break;
+            case "DELETE":txtRespuesta.setText(op.delete(Ruta.getText()));break;
         }
     }
 }
