@@ -22,18 +22,20 @@
       <children>
          <AnchorPane layoutX="-13.0" layoutY="-13.0" prefHeight="437.0" prefWidth="598.0">
             <children>
-               <ComboBox fx:id="listaOpciones" layoutX="36.0" layoutY="58.0" prefHeight="25.0" prefWidth="116.0" />
-               <Button fx:id="btBEnviarConsulta" layoutX="480.0" layoutY="58.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="92.0" text="Button" />
-               <TextArea layoutX="36.0" layoutY="282.0" prefHeight="137.0" prefWidth="536.0" />
+               <ComboBox fx:id="listaOpciones" layoutX="36.0" layoutY="58.0" onAction="#cxxt" prefHeight="25.0" prefWidth="116.0" />
+               <Button fx:id="btBEnviarConsulta" layoutX="480.0" layoutY="58.0" mnemonicParsing="false" onAction="#EjecutarConsulta" prefHeight="25.0" prefWidth="92.0" text="Button" />
+               <TextArea fx:id="txtRespuesta" layoutX="36.0" layoutY="282.0" prefHeight="137.0" prefWidth="536.0" />
                <Text layoutX="36.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Respuesta Servidor:" />
-               <TextArea layoutX="36.0" layoutY="121.0" prefHeight="123.0" prefWidth="536.0" />
+               <TextArea fx:id="txtParametros" layoutX="36.0" layoutY="121.0" prefHeight="123.0" prefWidth="536.0" />
                <Text layoutX="36.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Parametros:" />
+               
                <Text layoutX="185.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cliente SpringBoot" wrappingWidth="262.77434594690715">
                   <font>
                      <Font size="31.0" />
                   </font>
                </Text>
-               <TextField fx:id="txtRuta" layoutX="162.0" layoutY="58.0" prefHeight="25.0" prefWidth="308.0" />
+               <TextField fx:id="Ruta" layoutX="168.0" layoutY="58.0" prefHeight="25.0" prefWidth="304.0" />
+
             </children>
          </AnchorPane>
       </children>
