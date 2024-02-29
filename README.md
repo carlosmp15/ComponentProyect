@@ -1,6 +1,6 @@
 # Component Proyect
 ## Proyecto JavaComponent
-Cliente con interfaz gráfica en ``javafx``
+Cliente con interfaz gráfica en ``JavaFX``
 
-## Proyecto ComponentProyect
+## Proyecto ServidorSpring
 Servidor en modo texto de ``Spring-Boot``
